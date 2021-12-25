@@ -1,2 +1,155 @@
 <!DOCTYPE html>
 <html>
+<head>
+	<meta charset="utf-8">
+	<title>Natnael Mekuriaw Ferede-Portfolio</title>
+<!-- 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" integrity="sha384-tKLJeE1ALTUwtXlaGjJYM3sejfssWdAaWR2s97axw4xkiAdMzQjtOjgcyw0Y50KU" crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="rcs/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2">
+	<link rel="stylesheet" type="text/css" href="rcs/css/style.css">
+	<link rel="stylesheet" type="text/css" href="rcs/css/button.css">
+</head>
+
+<body id="theme" class="theme">
+	<div class="container">
+		<div class="nav navbar">
+			<div class="NM">NM</div>
+			<ul class="rightlinks">
+				<a href="#"><li class="links active" id="home"><span></span><span></span><span></span><span></span>Home</li></a>
+				<a href="#"><li class="links" id="skills">Skills</li>	</a>
+				<a href="#"><li class="links" id="about">About Me</li></a>
+				<a href="#"><li class="links" id="works">Works</li></a>
+				<a href="#"><li class="links" id="contact" >Contact Me</li></a>
+				<li class="dark-light" onclick="theme()"><i class="fa fa-moon-o " id="theme-icon" aria-hidden="true"></i></li>
+				
+			</ul>
+			
+		</div>
+
+		<div>
+			<p class="intro"><strong>Hello, I am Natnael</strong>A Graduate Class Software Engineering Student at ADDIS ABABA SCIENCE AND TECHNOLOGY UNIVERSITY 
+			. I am a passionate website, mobile and desktop application, website and game developer...</p>
+		</div>
+
+		<div>Contacts</div>
+		<div class="icons">
+			<a href="https://t.me/nasho91">
+			<i class="fa fa-facebook-square fa-2x social" aria-hidden="true"></i></a>
+			<a href="https://t.me/nasho91" style="background-decoration:inherixt"><i class="fa fa-telegram fa-2x social" aria-hidden="true" ></i></a>
+			<a href="https://www.linkedin.com/in/natnael-mekuriaw-504361178/" id="slink"><i class="fa fa-linkedin-square fa-2x social" aria-hidden="true"></i></a>
+			<a href="mailto:natnaelmekuriaw50@gamil.com"><i class="fa fa-google-plus-square fa-2x social" aria-hidden="true"></i></a>
+			<a href="https://t.me/nasho91">
+			<i class="fa fa-twitter-square fa-2x social" aria-hidden="true"></i></a>
+			<a href="https://t.me/nasho91">
+			<i class="fa fa-instagram fa-2x social" aria-hidden="true"></i></a>
+			<!-- <a href="game.html"><i class="fa fa-gamepad fa-2x social" aria-hidden="true"></i></a> -->
+			
+		</div>
+
+		<div ><b><h3 id="things">Things I Do</h3></b></div>
+
+		<div class="skills" id="skill1">
+			<div class="skill-img con">
+			<img src="rcs/img/Web_developer2.svg" class="skill-img">
+			</div>
+			<div class="description" id="web">
+			<h4>Website design</h4>
+			<p style="display: inline-block;">I am a positive, enthusiastic and competent Web Developer who, over the years, has built up a diverse range of skills both in front-end and back-end development. I am also highly familier with deffrent libraries, frameworks, APIs both in front-end and back-end development. By implementing my knowledge of HCI/Human-Computer-Interaction i am able to develop an interaactive, user-friendly, highly functional website with in a short time.</p>
+		</div>
+		</div>
+
+		<img src="rcs/img/LeftFlower_advanced.svg" style="margin-left: -130px;" class="leafs">
+
+
+		<div class="skills" id="skill2">
+			<div class="description" id="front-end">
+				<h4>Front-End development</h4>
+				<p style="display: inline-block;">I have acquired a good knowledge of diffrent front-end development languages, frameworks and even tools from basic HTML, CSS and JAVASCRIPT to BOOTSRAP, VUE, REACT, AJAX. I also imiplemented these skills practically to develope responsive, mobile-first, interactive and beautifull websites.</p>
+			</div>
+			<div class="skill-img con">
+			<img src="rcs/img/Web_developer2.svg" class="skill-img">
+			</div>
+		</div>
+
+
+	<h2>Call me on : <a href="tel:+251941782315" style="color:green!important">+251-941-78-2315 </a> or <a href="tel:+251963185948" style="color:green!important">+251-963-18-5948</a> </h2>
+
+	<h2>Email me :<a href="mailto:natnaelmekuriaw50@gamil.com" style="color:blue!important">natnaelmekuriaw50@gmail.com</a><h2>
+		<h3 style="color:red">Sorry, this portifolio site is currently being built.Contact me on LinkedIn or Telegram.</h3>
+		<div class="button2" onclick="playGame()">
+	  		<span></span>
+	  		<span></span>
+	  		<span></span>
+	  		<span></span>
+	  		Play Game
+		</div>
+
+	
+		
+		<!--<h1 id="h">hello</h1>-->
+	</div>
+
+
+<script type="text/javascript">
+	function notify(){
+	alert("Sorry, this portifolio site is currently being built.Contact me on LinkedIn or Telegram")
+	}
+	window.onLoad = notify;
+	let status = {
+		theme: 0,
+	};
+	
+	function playGame(){
+		alert("really dude");
+		document.getElementById("h").innerHTML="really";
+
+	}
+
+	function theme(){		
+
+		let theme = document.getElementById("theme");
+		let socialLinks = document.getElementsByTagName("a").style
+		//let slink = document.getElementById("slink");
+		
+		let themeIcon = document.getElementById("theme-icon");
+		let home = document.getElementById("home");
+		let skills = document.getElementById("skills");
+		let avout = document.getElementById("about");
+		let works = document.getElementById("works");
+		let contact = document.getElementById("contact");
+		
+
+		if(status.theme === 0){
+		
+				theme.classList.add("dark");
+				//slink.classList.add("dark");
+				themeIcon.className="fa fa-sun-o";
+				home.classList.add("links-on-dark")
+				skills.classList.add("links-on-dark")
+				works.classList.add("links-on-dark")
+				about.classList.add("links-on-dark")
+				contact.classList.add("links-on-dark")
+				socialLinks.classList.add("dark-social")
+				
+				status.theme = 1;
+			}
+			else{
+
+				theme.classList.remove("dark");
+				themeIcon.className="fa fa-moon-o";
+		
+				home.classList.remove("links-on-dark")
+				skills.classList.remove("links-on-dark")
+				works.classList.remove("links-on-dark")
+				about.classList.remove("links-on-dark")
+				contact.classList.remove("links-on-dark")
+				socialLinks.classList.remove("dark-social")
+
+				status.theme = 0;
+			}
+	}
+</script>
+</body>
+</html>
